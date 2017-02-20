@@ -81,7 +81,10 @@ celerybeat-schedule
 # virtualenv
 venv/
 ENV/
+<<<<<<< HEAD
 graphenv/
+=======
+>>>>>>> fdac8b9b067e7d3bd4f5d74d4087242920fa8853
 
 # Spyder project settings
 .spyderproject
