@@ -15,6 +15,7 @@ class Example(QWidget):
         self.button = QPushButton('Dialog', self)
         self.button.move(20, 20)
         self.button.clicked.connect(self.showDialog)
+        #sending a signal to show the dialog window, specified below
 
         self.line = QLineEdit(self)
         self.setWindowTitle('Input dialog')
@@ -22,6 +23,7 @@ class Example(QWidget):
 
 
     def showDialog(self):
+        #not sure how this "text, ok" works, lol
         text, ok = QInputDialog.getText(self, 'Input dialog', 'Enter your name:')
         if ok:
             self.line.setText(str(text))
